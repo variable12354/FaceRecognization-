@@ -173,7 +173,7 @@ class FaceContourDetectionProcessor(
                         faceOutputArray[0]
                     ) ?: return
 
-                    if (result.second < 1.0f) {
+                    if (result.second < 0.90f) {
                         Log.e(TAG, "onSuccessResult:$result ")
                         faceGraphic.name = result.second.toString()
                         onDetectCallback.invoke(faceBitmap, result.second)

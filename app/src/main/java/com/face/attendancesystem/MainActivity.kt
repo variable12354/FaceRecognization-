@@ -59,7 +59,8 @@ class MainActivity : AppCompatActivity() {
             cameraManager.changeCameraSelector()
         }
         btnRecord.setOnClickListener {
-            Log.e("TAG", "onClick:$result")
+            // perform camera button click event as per your requirement
+           /* Log.e("TAG", "onClick:$result")
             val resulting = if (result != null) result else 0.0f
             val verify = if (resulting?.equals(0.0f) == true){ false }
             else if(resulting!! < 1.0f){ true }
@@ -72,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                 putExtra(CAPTUREIMG,byteArray)
                 putExtra(VERIFIED,verify ?: false)
             })
-            finish()
+            finish()*/
         }
     }
 
